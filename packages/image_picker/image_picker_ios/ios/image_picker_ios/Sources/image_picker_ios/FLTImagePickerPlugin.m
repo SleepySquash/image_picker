@@ -175,6 +175,7 @@ typedef NS_ENUM(NSInteger, ImagePickerClassType) { UIImagePickerClassType, PHPic
   context.imageQuality = imageQuality;
   context.maxImageCount = 1;
   context.requestFullMetadata = fullMetadata;
+  context.includeVideo = YES;
 
   if (source.type == FLTSourceTypeGallery) {  // Capture is not possible with PHPicker
     if (@available(iOS 14, *)) {
